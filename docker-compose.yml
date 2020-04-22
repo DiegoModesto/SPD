@@ -1,0 +1,66 @@
+version: '3.4'
+
+networks:
+  dockerapi-dev:
+    driver: bridge
+
+services:
+  spd.api.rebrow:
+    image: marian/rebrow
+    container_name: rebrow
+    depends_on:
+      - spd.api.authentication.redis
+    ports:
+      - "1000:5001"
+    networks:
+      - dockerapi-dev
+
+  spd.api.pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "diego@diego.com"
+      PGADMIN_DEFAULT_PASSWORD: "@123mudar"
+    ports:
+      - "1001:80"
+    depends_on:
+      - spd.api.authentication.postgres
+    networks:
+      - dockerapi-dev
+
+  spd.api.authentication.postgres:
+    image: postgres
+    container_name: auth_db
+    expose:
+      - 5432
+    environment:
+      POSTGRES_USER: defaultUser
+      POSTGRES_PASSWORD: "@123mudar"
+      POSTGRES_DB: SPDAuthorization
+    ports:
+      - "5432:5432"
+    networks:
+      - dockerapi-dev
+  
+  spd.api.authentication.redis:
+    image: "redis:alpine"
+    container_name: auth_redis
+    ports:
+      - "6379:6379"
+    networks:
+      - dockerapi-dev
+
+  spd.api.authentication:
+    image: ${DOCKER_REGISTRY-}spdapiauthentication
+    container_name: auth_app
+    build:
+      context: .
+      dockerfile: src/SPD.Api.Authentication/Dockerfile
+    depends_on:
+      - spd.api.authentication.postgres
+      - spd.api.authentication.redis
+    ports:
+      - "5000:80"
+      - "5001:443"
+    networks:
+      - dockerapi-dev
