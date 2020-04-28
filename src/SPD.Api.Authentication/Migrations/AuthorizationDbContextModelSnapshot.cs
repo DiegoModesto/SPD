@@ -71,57 +71,57 @@ namespace SPD.Api.Authentication.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("94ebd846-586a-4d4a-877c-7b7439032d59"),
-                            ConcurrencyStamp = "1ddaed2a-69fc-4cde-95b6-4a0a57c00eaf",
+                            Id = new Guid("af1fc231-ac96-432f-bf08-1f0d267d067e"),
+                            ConcurrencyStamp = "3b836cff-28b2-4c06-99b9-b1a08a4d4879",
                             Name = "Owner",
                             NormalizedName = "Owner"
                         },
                         new
                         {
-                            Id = new Guid("94ce009f-8e1b-4ac2-8a68-a3c358617529"),
-                            ConcurrencyStamp = "a2173766-3f8d-48fd-b24d-5371c79ba70a",
+                            Id = new Guid("500d9387-7e1c-4652-9317-381fc350afb9"),
+                            ConcurrencyStamp = "e16e8bb2-ebeb-409d-8be9-9e544334dcd0",
                             Name = "Administrator",
                             NormalizedName = "Administrator"
                         },
                         new
                         {
-                            Id = new Guid("99cc1d0e-ffa3-47c4-be06-5cd6e8a3ba9b"),
-                            ConcurrencyStamp = "2b5d93c9-229e-4bea-adbb-f558270f6f28",
+                            Id = new Guid("a9f0bccc-bb0b-49cc-8d48-3ae5fa775113"),
+                            ConcurrencyStamp = "137a7edf-529a-4226-8d27-33974fd485ef",
                             Name = "Manager",
                             NormalizedName = "Manager"
                         },
                         new
                         {
-                            Id = new Guid("ba23acff-786a-4fb1-bd86-a78220d30b10"),
-                            ConcurrencyStamp = "831131ca-1ccc-476b-87e2-cf478d167e0c",
+                            Id = new Guid("c733461c-736c-4df6-8d8c-a5ce67978414"),
+                            ConcurrencyStamp = "5c340b38-9c55-42d2-a902-cb18c0d228b8",
                             Name = "Editor",
                             NormalizedName = "Editor"
                         },
                         new
                         {
-                            Id = new Guid("8693637e-16ab-4f8d-9cbf-2e53981b35ab"),
-                            ConcurrencyStamp = "934cdbb6-cd4b-4089-9c47-80274e072d21",
+                            Id = new Guid("06333882-6970-4f7b-bfcd-8b3858588b17"),
+                            ConcurrencyStamp = "3b447ed0-47aa-4fcc-9b01-182a26e025e2",
                             Name = "Buyer",
                             NormalizedName = "Buyer"
                         },
                         new
                         {
-                            Id = new Guid("74b4c15c-8f37-4499-bdf1-b06dede91508"),
-                            ConcurrencyStamp = "fccf3f4e-367a-4fd0-accb-117ab827e576",
+                            Id = new Guid("86298c9d-11f1-4c7d-b7a7-5adbf3a904cc"),
+                            ConcurrencyStamp = "cdc716ff-b1b7-4291-817d-bf626829a1c5",
                             Name = "Business",
                             NormalizedName = "Business"
                         },
                         new
                         {
-                            Id = new Guid("1710308e-509d-40ae-a0d6-3f4feccba1b0"),
-                            ConcurrencyStamp = "5b76f3e0-0618-4748-866f-b5f468431cc2",
+                            Id = new Guid("0f7af0a8-0ffa-4138-8089-535ec9f252f3"),
+                            ConcurrencyStamp = "096795f4-1d8d-4c7c-8b3a-f7c1d8357bd3",
                             Name = "Seller",
                             NormalizedName = "Seller"
                         },
                         new
                         {
-                            Id = new Guid("b69a3a7c-0e3d-46b6-90c2-d33f0132b684"),
-                            ConcurrencyStamp = "f49bb0ec-ed89-461f-80da-5a89a2a31762",
+                            Id = new Guid("621259df-1421-4948-a367-9abafbf0b114"),
+                            ConcurrencyStamp = "3552be63-1e06-47d8-9fc1-46f3cde56eef",
                             Name = "Subscriber",
                             NormalizedName = "Subscriber"
                         });
@@ -226,65 +226,77 @@ namespace SPD.Api.Authentication.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("330180fa-48d7-4a63-a6f2-d94a68d003f4"),
+                            Id = new Guid("8a1e1d77-c92e-4750-aba7-dd4c17851179"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5404e1e8-5622-4e6c-9c44-607d064b12d8",
+                            ConcurrencyStamp = "14729aab-5009-4f17-ae5e-ce280b9b6f25",
                             Email = "diego.modesto@company.com",
                             EmailConfirmed = false,
                             FirstName = "Diego",
                             FullfilmentComplete = false,
                             LastName = "Modesto",
-                            LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEBpaNBWctUDCszBxTLIr35uZ3rziQ1iqdwHr9EvKw3t5sjUwyshFo0pg3fanhfWujQ==",
+                            LockoutEnabled = true,
+                            NormalizedEmail = "DIEGO.MODESTO@COMPANY.COM",
+                            NormalizedUserName = "DIEGO.MODESTO",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFJYX3v7QDVR3s30dR9szO174kWhYWWiYH6WODdrrr7rOXr4CYSJqLnLke5Vj04hxw==",
                             PhoneNumberConfirmed = false,
+                            SecurityStamp = "53698001-b21d-4442-91bb-0ab846f3cd02",
                             TwoFactorEnabled = false,
                             UserName = "diego.modesto"
                         },
                         new
                         {
-                            Id = new Guid("3dcc7d9a-2982-4be5-9d31-fc2c54fa512b"),
+                            Id = new Guid("f1d3ec4c-337a-4f74-86a7-28fe0b311a32"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6198f0cd-9f02-4d81-85b9-4453e1f7123b",
+                            ConcurrencyStamp = "7f4ba486-b20f-4c53-899b-761b5dda821d",
                             Email = "samuel.souza@company.com",
                             EmailConfirmed = false,
                             FirstName = "Samuel",
                             FullfilmentComplete = false,
                             LastName = "Souza",
-                            LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAELL6J7F17EXVxH6Dlf5VHfvPU3t8Aaw7IXci99QgYnBFFjpLB2BAhUeCPspgm4Px1g==",
+                            LockoutEnabled = true,
+                            NormalizedEmail = "SAMUEL.SOUZA@COMPANY.COM",
+                            NormalizedUserName = "SAMUEL.SOUZA",
+                            PasswordHash = "AQAAAAEAACcQAAAAEHq9oAZn9fLM4ToNr0pElxlEYzca5KWJS5jQFJZAG7vkBbRak4Iy8HJ9Gae6Zx2ZOQ==",
                             PhoneNumberConfirmed = false,
+                            SecurityStamp = "2163f504-d5da-446c-a416-4f8060968fc7",
                             TwoFactorEnabled = false,
                             UserName = "samuel.souza"
                         },
                         new
                         {
-                            Id = new Guid("95ae70c7-43b9-4880-8c16-e555d5f04577"),
+                            Id = new Guid("4bbd9499-52fd-4781-9082-b4285adfcce7"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "01949a8a-0149-478a-b15a-4e7b7a2b754b",
+                            ConcurrencyStamp = "64c31317-c895-4a74-ae30-ace019d4a428",
                             Email = "user.buyer@company.com",
                             EmailConfirmed = false,
                             FirstName = "User",
                             FullfilmentComplete = false,
                             LastName = "Buyer",
-                            LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEDRA6FKS7OVVEzLZuo9sVG40JprHS3uK84cMAd6yZb5+7uvzcH4ixYORkBmSYjWpPg==",
+                            LockoutEnabled = true,
+                            NormalizedEmail = "USER.BUYER@COMPANY.COM",
+                            NormalizedUserName = "USER.BUYER",
+                            PasswordHash = "AQAAAAEAACcQAAAAEBmCF1onfADv8p+Z3bTNTGT5XOAKyedHCkY5hKccCh6mrNj4W5iHsre8zwNFx+icOg==",
                             PhoneNumberConfirmed = false,
+                            SecurityStamp = "df3f0796-0555-4bfd-bdf2-a8f41b33585b",
                             TwoFactorEnabled = false,
                             UserName = "user.buyer"
                         },
                         new
                         {
-                            Id = new Guid("444d83ca-4f89-4263-9e29-175df2d3dfe6"),
+                            Id = new Guid("26c1dc42-2936-4fd9-9043-457c4915adc5"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2b0530fd-12d9-4a78-8888-a3796f9eadfb",
+                            ConcurrencyStamp = "6f33e624-7c74-4da5-bee9-1b540d392b33",
                             Email = "user.Seller@company.com",
                             EmailConfirmed = false,
                             FirstName = "User",
                             FullfilmentComplete = false,
                             LastName = "Seller",
-                            LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEDv2g/XfOGQPk9SRP/kVYf7M4prTUSe9ibi2LCMOzsZt7RCIteGNAS08nmgzvWJUiw==",
+                            LockoutEnabled = true,
+                            NormalizedEmail = "USER.SELLER@COMPANY.COM",
+                            NormalizedUserName = "USER.SELLER",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFLaqpxypJz5hKZGImXeJRfx8ZUSjSC3b4ph6HShK+hpCeBtx9re75WH1NAGv1h/6w==",
                             PhoneNumberConfirmed = false,
+                            SecurityStamp = "6cd8d627-829c-4aad-8e34-f086e02a0c5f",
                             TwoFactorEnabled = false,
                             UserName = "user.seller"
                         });
@@ -328,23 +340,23 @@ namespace SPD.Api.Authentication.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("330180fa-48d7-4a63-a6f2-d94a68d003f4"),
-                            RoleId = new Guid("94ebd846-586a-4d4a-877c-7b7439032d59")
+                            UserId = new Guid("8a1e1d77-c92e-4750-aba7-dd4c17851179"),
+                            RoleId = new Guid("af1fc231-ac96-432f-bf08-1f0d267d067e")
                         },
                         new
                         {
-                            UserId = new Guid("3dcc7d9a-2982-4be5-9d31-fc2c54fa512b"),
-                            RoleId = new Guid("94ce009f-8e1b-4ac2-8a68-a3c358617529")
+                            UserId = new Guid("f1d3ec4c-337a-4f74-86a7-28fe0b311a32"),
+                            RoleId = new Guid("500d9387-7e1c-4652-9317-381fc350afb9")
                         },
                         new
                         {
-                            UserId = new Guid("95ae70c7-43b9-4880-8c16-e555d5f04577"),
-                            RoleId = new Guid("8693637e-16ab-4f8d-9cbf-2e53981b35ab")
+                            UserId = new Guid("4bbd9499-52fd-4781-9082-b4285adfcce7"),
+                            RoleId = new Guid("06333882-6970-4f7b-bfcd-8b3858588b17")
                         },
                         new
                         {
-                            UserId = new Guid("444d83ca-4f89-4263-9e29-175df2d3dfe6"),
-                            RoleId = new Guid("1710308e-509d-40ae-a0d6-3f4feccba1b0")
+                            UserId = new Guid("26c1dc42-2936-4fd9-9043-457c4915adc5"),
+                            RoleId = new Guid("0f7af0a8-0ffa-4138-8089-535ec9f252f3")
                         });
                 });
 

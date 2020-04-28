@@ -25,10 +25,24 @@ namespace SPD.Api.Authentication
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            var swaggerSettings = new SwaggerSettings();
+            Configuration.GetSection(nameof(SwaggerSettings)).Bind(swaggerSettings);
+
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
             else
                 app.UseHsts();
+
+            app.UseSwagger(opt =>
+            {
+                {
+                    opt.RouteTemplate = swaggerSettings.JsonRoute;
+                }
+            });
+            app.UseSwaggerUI(opt =>
+            {
+                opt.SwaggerEndpoint(swaggerSettings.UIEndpoint, swaggerSettings.Description);
+            });
 
             app.UseHttpsRedirection();
             app.UseRouting();

@@ -155,7 +155,11 @@ namespace SPD.Api.Authentication.Business.DataBase
                             UserName = user.Name,
                             Email = user.Email,
                             FirstName = user.FirstName,
-                            LastName = user.LastName
+                            LastName = user.LastName,
+                            NormalizedEmail = user.Email.ToUpper(),
+                            NormalizedUserName = user.Name.ToUpper(),
+                            SecurityStamp = Guid.NewGuid().ToString("D"),
+                            LockoutEnabled = true
                         };
                         appUser.PasswordHash = hasher.HashPassword(appUser, user.OpenPassword);
 

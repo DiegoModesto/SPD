@@ -21,7 +21,7 @@ namespace SPD.Api.Authentication.Controllers.V1
 
         [AllowAnonymous]
         [HttpPost(ApiRoutes.Auth.SignIn)]
-        public async Task<IActionResult> SingIn(LoginViewModel model)
+        public async Task<IActionResult> SingIn([FromBody] LoginViewModel model)
         {
             var (IsSuccess, UserViewModel, ErrorMessage) = await _authProvider.SignInUserAsync(model);
 
@@ -32,7 +32,7 @@ namespace SPD.Api.Authentication.Controllers.V1
 
         [AllowAnonymous]
         [HttpPost(ApiRoutes.Auth.SignUp)]
-        public async Task<IActionResult> Register(RegisterViewModel model)
+        public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
         {
             var (IsSuccess, UserViewModel, ErrorMessage) = await _authProvider.SignUpUserAsync(model);
 

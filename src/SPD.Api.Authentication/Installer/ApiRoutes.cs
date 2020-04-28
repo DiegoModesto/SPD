@@ -8,9 +8,9 @@
 
         public static class Auth
         {
-            public const string SignIn = Base + "/signin";
-            public const string SignUp = Base + "/register";
-            public const string SignOut = Base + "/signout";
+            public const string SignIn = Base + "/auth/signin";
+            public const string SignUp = Base + "/auth/register";
+            public const string SignOut = Base + "/auth/signout";
         }
     }
 }

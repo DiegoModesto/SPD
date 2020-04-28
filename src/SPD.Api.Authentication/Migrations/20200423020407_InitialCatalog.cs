@@ -161,14 +161,14 @@ namespace SPD.Api.Authentication.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { new Guid("94ebd846-586a-4d4a-877c-7b7439032d59"), "1ddaed2a-69fc-4cde-95b6-4a0a57c00eaf", "Owner", "Owner" },
-                    { new Guid("94ce009f-8e1b-4ac2-8a68-a3c358617529"), "a2173766-3f8d-48fd-b24d-5371c79ba70a", "Administrator", "Administrator" },
-                    { new Guid("99cc1d0e-ffa3-47c4-be06-5cd6e8a3ba9b"), "2b5d93c9-229e-4bea-adbb-f558270f6f28", "Manager", "Manager" },
-                    { new Guid("ba23acff-786a-4fb1-bd86-a78220d30b10"), "831131ca-1ccc-476b-87e2-cf478d167e0c", "Editor", "Editor" },
-                    { new Guid("8693637e-16ab-4f8d-9cbf-2e53981b35ab"), "934cdbb6-cd4b-4089-9c47-80274e072d21", "Buyer", "Buyer" },
-                    { new Guid("74b4c15c-8f37-4499-bdf1-b06dede91508"), "fccf3f4e-367a-4fd0-accb-117ab827e576", "Business", "Business" },
-                    { new Guid("1710308e-509d-40ae-a0d6-3f4feccba1b0"), "5b76f3e0-0618-4748-866f-b5f468431cc2", "Seller", "Seller" },
-                    { new Guid("b69a3a7c-0e3d-46b6-90c2-d33f0132b684"), "f49bb0ec-ed89-461f-80da-5a89a2a31762", "Subscriber", "Subscriber" }
+                    { new Guid("af1fc231-ac96-432f-bf08-1f0d267d067e"), "3b836cff-28b2-4c06-99b9-b1a08a4d4879", "Owner", "Owner" },
+                    { new Guid("500d9387-7e1c-4652-9317-381fc350afb9"), "e16e8bb2-ebeb-409d-8be9-9e544334dcd0", "Administrator", "Administrator" },
+                    { new Guid("a9f0bccc-bb0b-49cc-8d48-3ae5fa775113"), "137a7edf-529a-4226-8d27-33974fd485ef", "Manager", "Manager" },
+                    { new Guid("c733461c-736c-4df6-8d8c-a5ce67978414"), "5c340b38-9c55-42d2-a902-cb18c0d228b8", "Editor", "Editor" },
+                    { new Guid("06333882-6970-4f7b-bfcd-8b3858588b17"), "3b447ed0-47aa-4fcc-9b01-182a26e025e2", "Buyer", "Buyer" },
+                    { new Guid("86298c9d-11f1-4c7d-b7a7-5adbf3a904cc"), "cdc716ff-b1b7-4291-817d-bf626829a1c5", "Business", "Business" },
+                    { new Guid("0f7af0a8-0ffa-4138-8089-535ec9f252f3"), "096795f4-1d8d-4c7c-8b3a-f7c1d8357bd3", "Seller", "Seller" },
+                    { new Guid("621259df-1421-4948-a367-9abafbf0b114"), "3552be63-1e06-47d8-9fc1-46f3cde56eef", "Subscriber", "Subscriber" }
                 });
 
             migrationBuilder.InsertData(
@@ -176,10 +176,10 @@ namespace SPD.Api.Authentication.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "FullfilmentComplete", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { new Guid("330180fa-48d7-4a63-a6f2-d94a68d003f4"), 0, "5404e1e8-5622-4e6c-9c44-607d064b12d8", "diego.modesto@company.com", false, "Diego", false, "Modesto", false, null, null, null, "AQAAAAEAACcQAAAAEBpaNBWctUDCszBxTLIr35uZ3rziQ1iqdwHr9EvKw3t5sjUwyshFo0pg3fanhfWujQ==", null, false, null, false, "diego.modesto" },
-                    { new Guid("3dcc7d9a-2982-4be5-9d31-fc2c54fa512b"), 0, "6198f0cd-9f02-4d81-85b9-4453e1f7123b", "samuel.souza@company.com", false, "Samuel", false, "Souza", false, null, null, null, "AQAAAAEAACcQAAAAELL6J7F17EXVxH6Dlf5VHfvPU3t8Aaw7IXci99QgYnBFFjpLB2BAhUeCPspgm4Px1g==", null, false, null, false, "samuel.souza" },
-                    { new Guid("95ae70c7-43b9-4880-8c16-e555d5f04577"), 0, "01949a8a-0149-478a-b15a-4e7b7a2b754b", "user.buyer@company.com", false, "User", false, "Buyer", false, null, null, null, "AQAAAAEAACcQAAAAEDRA6FKS7OVVEzLZuo9sVG40JprHS3uK84cMAd6yZb5+7uvzcH4ixYORkBmSYjWpPg==", null, false, null, false, "user.buyer" },
-                    { new Guid("444d83ca-4f89-4263-9e29-175df2d3dfe6"), 0, "2b0530fd-12d9-4a78-8888-a3796f9eadfb", "user.Seller@company.com", false, "User", false, "Seller", false, null, null, null, "AQAAAAEAACcQAAAAEDv2g/XfOGQPk9SRP/kVYf7M4prTUSe9ibi2LCMOzsZt7RCIteGNAS08nmgzvWJUiw==", null, false, null, false, "user.seller" }
+                    { new Guid("8a1e1d77-c92e-4750-aba7-dd4c17851179"), 0, "14729aab-5009-4f17-ae5e-ce280b9b6f25", "diego.modesto@company.com", false, "Diego", false, "Modesto", true, null, "DIEGO.MODESTO@COMPANY.COM", "DIEGO.MODESTO", "AQAAAAEAACcQAAAAEFJYX3v7QDVR3s30dR9szO174kWhYWWiYH6WODdrrr7rOXr4CYSJqLnLke5Vj04hxw==", null, false, "53698001-b21d-4442-91bb-0ab846f3cd02", false, "diego.modesto" },
+                    { new Guid("f1d3ec4c-337a-4f74-86a7-28fe0b311a32"), 0, "7f4ba486-b20f-4c53-899b-761b5dda821d", "samuel.souza@company.com", false, "Samuel", false, "Souza", true, null, "SAMUEL.SOUZA@COMPANY.COM", "SAMUEL.SOUZA", "AQAAAAEAACcQAAAAEHq9oAZn9fLM4ToNr0pElxlEYzca5KWJS5jQFJZAG7vkBbRak4Iy8HJ9Gae6Zx2ZOQ==", null, false, "2163f504-d5da-446c-a416-4f8060968fc7", false, "samuel.souza" },
+                    { new Guid("4bbd9499-52fd-4781-9082-b4285adfcce7"), 0, "64c31317-c895-4a74-ae30-ace019d4a428", "user.buyer@company.com", false, "User", false, "Buyer", true, null, "USER.BUYER@COMPANY.COM", "USER.BUYER", "AQAAAAEAACcQAAAAEBmCF1onfADv8p+Z3bTNTGT5XOAKyedHCkY5hKccCh6mrNj4W5iHsre8zwNFx+icOg==", null, false, "df3f0796-0555-4bfd-bdf2-a8f41b33585b", false, "user.buyer" },
+                    { new Guid("26c1dc42-2936-4fd9-9043-457c4915adc5"), 0, "6f33e624-7c74-4da5-bee9-1b540d392b33", "user.Seller@company.com", false, "User", false, "Seller", true, null, "USER.SELLER@COMPANY.COM", "USER.SELLER", "AQAAAAEAACcQAAAAEFLaqpxypJz5hKZGImXeJRfx8ZUSjSC3b4ph6HShK+hpCeBtx9re75WH1NAGv1h/6w==", null, false, "6cd8d627-829c-4aad-8e34-f086e02a0c5f", false, "user.seller" }
                 });
 
             migrationBuilder.InsertData(
@@ -187,10 +187,10 @@ namespace SPD.Api.Authentication.Migrations
                 columns: new[] { "UserId", "RoleId" },
                 values: new object[,]
                 {
-                    { new Guid("330180fa-48d7-4a63-a6f2-d94a68d003f4"), new Guid("94ebd846-586a-4d4a-877c-7b7439032d59") },
-                    { new Guid("3dcc7d9a-2982-4be5-9d31-fc2c54fa512b"), new Guid("94ce009f-8e1b-4ac2-8a68-a3c358617529") },
-                    { new Guid("95ae70c7-43b9-4880-8c16-e555d5f04577"), new Guid("8693637e-16ab-4f8d-9cbf-2e53981b35ab") },
-                    { new Guid("444d83ca-4f89-4263-9e29-175df2d3dfe6"), new Guid("1710308e-509d-40ae-a0d6-3f4feccba1b0") }
+                    { new Guid("8a1e1d77-c92e-4750-aba7-dd4c17851179"), new Guid("af1fc231-ac96-432f-bf08-1f0d267d067e") },
+                    { new Guid("f1d3ec4c-337a-4f74-86a7-28fe0b311a32"), new Guid("500d9387-7e1c-4652-9317-381fc350afb9") },
+                    { new Guid("4bbd9499-52fd-4781-9082-b4285adfcce7"), new Guid("06333882-6970-4f7b-bfcd-8b3858588b17") },
+                    { new Guid("26c1dc42-2936-4fd9-9043-457c4915adc5"), new Guid("0f7af0a8-0ffa-4138-8089-535ec9f252f3") }
                 });
 
             migrationBuilder.CreateIndex(
